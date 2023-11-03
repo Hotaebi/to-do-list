@@ -29,11 +29,11 @@ const TodoList = () => {
     return (
         <div className="Todo">
             <h1>To-Do-List-App</h1>
-            <div className="Form">
-        <input className="input" type="text" value={inputTask}
+            <form className="Form">
+        <input required className="input" type="text" value={inputTask}
            onChange={handleInputChange} placeholder="Your New Task..." />
            <button className="btn" onClick={() => handleAddTodo(inputTask)}>Add Task</button>
-        </div>
+        </form>
 
             <ul>
             { List.map((todo) => (
