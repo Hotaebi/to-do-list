@@ -1,0 +1,73 @@
+body {
+  background: blueviolet;
+  
+}
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h1 {
+  text-shadow: rgba(0, 0, 0, 0.24) 5px 5px 5px;
+  
+}
+.Todo {
+  background-color: rgb(193, 142, 241);
+  text-align: center;
+  width: 50%;
+  border-radius: 9px;
+  padding: 50px;
+  box-shadow: 0.25rem 0.25rem #121212;
+  margin: 150px auto;
+}
+
+ul {
+  list-style-type: square;
+  padding: 10px;
+  margin: 0;
+}
+
+button {
+  width: 100px;
+  height: 38px;
+  background-color: 	#ffd700;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 4px;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms, box-shadow 50ms;
+}
+button:active {
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
+}
+.input {
+  border: none;
+  width: 340px;
+  height: 35px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem #121212;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+li:before {
+  content: "Task";
+  
+}
