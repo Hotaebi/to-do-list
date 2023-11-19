@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Tasks from './TaskList';
 
 const TodoList = () => {
     const [inputTask, setInputTask] = useState ("");
@@ -37,12 +38,7 @@ const TodoList = () => {
 
             <ul>
             { List.map((todo) => (
-                    <li className="task" key={todo.id}>
-                        {todo.todo}
-                        <button onClick={() => handleDeleteTodo(todo.id)}>
-                           Delete
-                      </button>
-                    </li>
+                    <Tasks todo={todo} handleDeleteTodo={handleDeleteTodo} />
             ))}
             </ul>
         </div>
